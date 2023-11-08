@@ -1,0 +1,4 @@
+PS C:\Users\aktas\git_challenge> git log --oneline
+813be8d (HEAD -> main) hello,world!
+d3595d5 日本語訳を追記
+PS C:\Users\aktas\git_challenge> 
