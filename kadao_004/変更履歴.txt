@@ -1,0 +1,160 @@
+PS C:\Users\aktas\Documents\git_challenge> git add .\hello_world.txt
+PS C:\Users\aktas\Documents\git_challenge> git commit -m "hello_world.txtwp"    
+[main 0bcb1c7] hello_world.txtwp
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\Users\aktas\Documents\git_challenge> git commit --amend  
+[main 4b49e5a] hello_world.txtを追加
+ Date: Sat Nov 11 13:21:18 2023 +0900
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\Users\aktas\Documents\git_challenge> git status                       
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\aktas\Documents\git_challenge> git log
+commit 4b49e5a5aa5b4dcfc86ee178e2790aee0680a0e7 (HEAD -> main)
+Author: zigeoro <aktasi.iwate.1116@gmail.com>
+Date:   Sat Nov 11 13:21:18 2023 +0900
+
+    hello_world.txtを追加
+
+commit 59556236c0c0a16dcd579b76fbf71cc7e8edb602
+Author: zigeoro <aktasi.iwate.1116@gmail.com>
+Date:   Sat Nov 11 13:16:13 2023 +0900
+
+    hello_world.txtを削除
+
+commit 110198b982a7a5e57ff30addbe17a03095db28d7
+Author: zigeoro <aktasi.iwate.1116@gmail.com>
+D
+    git commit -m "hello_world.txtを追加"
+PS C:\Users\aktas\Documents\git_challenge> git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\aktas\Documents\git_challenge> git commit -m "日本語訳を追記"   
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\aktas\Documents\git_challenge> git add .\hello_world.txt        
+PS C:\Users\aktas\Documents\git_challenge> git commit -m "日本語訳を追記"
+[main d3d55f4] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+PS C:\Users\aktas\Documents\git_challenge> git status                    
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\aktas\Documents\git_challenge> git log                       
+commit d3d55f4b62cff6f89155a046d741352358e0f20e (HEAD -> main)
+commit d3d55f4b62cff6f89155a046d741352358e0f20e (HEAD -> main)
+Author: zigeoro <aktasi.iwate.1116@gmail.com>
+Date:   Sat Nov 11 13:27:33 2023 +0900
+
+    日本語訳を追記
+
+commit 4b49e5a5aa5b4dcfc86ee178e2790aee0680a0e7
+Author: zigeoro <aktasi.iwate.1116@gmail.com>
+Date:   Sat Nov 11 13:21:18 2023 +0900
+
+    hello_world.txtを追加
+
+commit 59556236c0c0a16dcd579b76fbf71cc7e8edb602
+Author: zigeoro <aktasi.iwate.1116@gmail.com>
+Date:   Sat Nov 11 13:16:13 2023 +0900
+
+    hello_world.txtを削除
+
+commit 110198b982a7a5e57ff30addbe17a03095db28d7
+Author: zigeoro <aktasi.iwate.1116@gmail.com>
+Date:   Thu Nov 9 22:24:06 2023 +0900
+
+    git commit -m "hello_world.txtを追加"
+~
+...skipping...
+
+                   SUMMARY OF LESS COMMANDS
+
+      Commands marked with * may be preceded by a number, N.
+      Notes in parentheses indicate the behavior if N is given.
+      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.
+
+  h  H                 Display this help.
+  q  :q  Q  :Q  ZZ     Exit.
+ ---------------------------------------------------------------------------
+
+                           MOVING
+
+  e  ^E  j  ^N  CR  *  Forward  one line   (or N lines).
+  y  ^Y  k  ^K  ^P  *  Backward one line   (or N lines).
+  f  ^F  ^V  SPACE  *  Forward  one window (or N lines).
+  b  ^B  ESC-v      *  Backward one window (or N lines).
+  z                 *  Forward  one window (and set window to N).
+  w                 *  Backward one window (and set window to N).
+  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.
+  d  ^D             *  Forward  one half-window (and set half-window to N).
+...skipping...
+                   SUMMARY OF LESS COMMANDS
+
+      Commands marked with * may be preceded by a number, N.
+      Notes in parentheses indicate the behavior if N is given.
+      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.
+
+  h  H                 Display this help.
+  q  :q  Q  :Q  ZZ     Exit.
+ ---------------------------------------------------------------------------
+
+                           MOVING
+
+  e  ^E  j  ^N  CR  *  Forward  one line   (or N lines).
+  y  ^Y  k  ^K  ^P  *  Backward one line   (or N lines).
+  f  ^F  ^V  SPACE  *  Forward  one window (or N lines).
+  b  ^B  ESC-v      *  Backward one window (or N lines).
+  z                 *  Forward  one window (and set window to N).
+  w                 *  Backward one window (and set window to N).
+  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.
+  d  ^D             *  Forward  one half-window (and set half-window to N).
+  u  ^U             *  Backward one half-window (and set half-window to N).
+  ESC-)  RightArrow *  Right one half screen width (or N positions).
+  ESC-(  LeftArrow  *  Left  one half screen width (or N positions).
+  ESC-}  ^RightArrow   Right to last column displayed.
+  ESC-{  ^LeftArrow    Left  to first column.
+  F                    Forward forever; like "tail -f".
+  ESC-F                Like F but stop when search pattern is found.
+  r  ^R  ^L            Repaint screen.
+  R                    Repaint screen, discarding buffered input.
+        ---------------------------------------------------
+        Default "window" is the screen height.
+HELP -- Press RETURN for more, or q when done...skipping...
+    日本語訳を追記
+
+commit 4b49e5a5aa5b4dcfc86ee178e2790aee0680a0e7
+Author: zigeoro <aktasi.iwate.1116@gmail.com>
+Date:   Sat Nov 11 13:21:18 2023 +0900
+
+    hello_world.txtを追加
+
+commit 59556236c0c0a16dcd579b76fbf71cc7e8edb602
+Author: zigeoro <aktasi.iwate.1116@gmail.com>
+Date:   Sat Nov 11 13:16:13 2023 +0900
+
+    hello_world.txtを削除
+
+commit 110198b982a7a5e57ff30addbe17a03095db28d7
+Author: zigeoro <aktasi.iwate.1116@gmail.com>
+Date:   Thu Nov 9 22:24:06 2023 +0900
+
+    git commit -m "hello_world.txtを追加"
+
+PS C:\Users\aktas\Documents\git_challenge> git log --oneline
+d3d55f4 (HEAD -> main) 日本語訳を追記
+4b49e5a hello_world.txtを追加
+5955623 hello_world.txtを削除
+110198b git commit -m "hello_world.txtを追加"
+PS C:\Users\aktas\Documents\git_challenge> 
